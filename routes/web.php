@@ -30,8 +30,8 @@ Route::get('/', function () {
 // Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 
-Route::group(['prefix' => 'auth', 'as' => 'auth.'], function () {
-    Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::controller(AuthController::class)->group(function(){
+    Route::get('login', [AuthController::class, 'login'])->name('login');
     Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
     
     Route::get('registration', [AuthController::class, 'registration'])->name('register');

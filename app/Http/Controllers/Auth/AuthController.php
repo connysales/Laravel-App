@@ -16,7 +16,7 @@ class AuthController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function index()
+    public function login()
     {
         if(Auth::check()) {
             return redirect('/');
