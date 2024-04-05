@@ -1,3 +1,5 @@
+
+
 @extends('index')
 @section('title','HOME')
 @section('content')
@@ -15,5 +17,4 @@
 		</div>
 	</div>
 </section>
-
 @endsection

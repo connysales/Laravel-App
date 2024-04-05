@@ -1,6 +1,7 @@
-@extends('layout')
+@extends('index')
   
 @section('content')
+
 <main class="login-form">
   <div class="cotainer">
       <div class="row justify-content-center">
@@ -9,7 +10,7 @@
                   <div class="card-header">Login</div>
                   <div class="card-body">
   
-                      <form action="{{ route('login.post') }}" method="POST">
+                      <form action="{{ route('auth.login.post') }}" method="POST">
                           @csrf
                           <div class="form-group row">
                               <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>

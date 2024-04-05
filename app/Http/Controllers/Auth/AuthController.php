@@ -52,7 +52,7 @@ class AuthController extends Controller
 
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('dashboard')
+            return redirect()->intended('home')
                 ->withSuccess('You have Successfully logged in');
         }
 
@@ -77,7 +77,7 @@ class AuthController extends Controller
         $data['password'] = Hash::make($data['password']); // Hashing the password
         $user = $this->create($data);
 
-        return redirect("dashboard")->withSuccess('Great! You have Successfully registered and logged in');
+        return redirect("home")->withSuccess('Great! You have Successfully registered and logged in');
     }
 
     /**
@@ -100,10 +100,55 @@ class AuthController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function dashboard()
+    public function home()
     {
         if (Auth::check()) {
-            return view('dashboard');
+            return view('home');
+        }
+
+        return redirect("login")->withSuccess('Oops! You do not have access');
+    }
+
+    public function about()
+    {
+        if (Auth::check()) {
+            return view('about');
+        }
+
+        return redirect("login")->withSuccess('Oops! You do not have access');
+    }
+
+    public function contact()
+    {
+        if (Auth::check()) {
+            return view('contact');
+        }
+
+        return redirect("login")->withSuccess('Oops! You do not have access');
+    }
+
+    public function price()
+    {
+        if (Auth::check()) {
+            return view('price');
+        }
+
+        return redirect("login")->withSuccess('Oops! You do not have access');
+    }
+
+    public function services()
+    {
+        if (Auth::check()) {
+            return view('services');
+        }
+
+        return redirect("login")->withSuccess('Oops! You do not have access');
+    }
+
+    public function testimonial()
+    {
+        if (Auth::check()) {
+            return view('testimonial');
         }
 
         return redirect("login")->withSuccess('Oops! You do not have access');
