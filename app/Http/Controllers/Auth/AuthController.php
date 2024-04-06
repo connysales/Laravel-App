@@ -71,11 +71,17 @@ class AuthController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
+            'user_type' => 'required|in:customer,barber,admin' // Add validation rule for user_type
         ]);
 
         $data = $request->all();
-        $data['password'] = Hash::make($data['password']); // Hashing the password
-        $user = $this->create($data);
+
+        $user = new User();
+        $user->name = $data['name'];
+        $user->email = $data['email'];
+        $user->password = Hash::make($data['password']);
+        $user->user_type = $data['user_type'];
+        $user->save();
 
         return redirect("home")->withSuccess('Great! You have Successfully registered and logged in');
     }

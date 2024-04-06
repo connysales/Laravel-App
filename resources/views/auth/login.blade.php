@@ -1,9 +1,10 @@
-@extends('index')
+@extends('no')
   
 @section('content')
 
 <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/logins/login-3/assets/css/login-3.css">
   <!-- Login 3 - Bootstrap Brain Component -->
+  <br><br><br><br><br><br><br><br>
   <section class="p-3 p-md-4 p-xl-5">
     <div class="container">
       <div class="row">
@@ -35,7 +36,7 @@
                 </div>
                 <div class="col-12">
                   <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
-                  <input type="password" class="form-control" name="password" id="password" value="" required>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="password" required>
                   @if ($errors->has('password'))
                     <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif
@@ -60,4 +61,5 @@
       </div>
     </div>
   </section>
+  
 @endsection
