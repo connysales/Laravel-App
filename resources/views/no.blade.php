@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Conny Barber Shop</title>
-</head>
+
+	
+
 <!-- bootstrap Style CSS File -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="icon" href="{{asset('img/icons/logo.png')}}">
 <!-- Custom Style CSS File -->
 <link rel="stylesheet" type="text/css" href="css/custom-style.css">
 <link rel="stylesheet" type="text/css" href="css/loaders.css"/>
 <!-- Font-Awesome Style CSS File -->
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+<head>
+    <title>Conny Barber Shop - @yield('title')</title>
+</head>
 
 <body>
 

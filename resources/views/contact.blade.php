@@ -1,7 +1,7 @@
 
 
 @extends('index')
-@section('title','HOME')
+@section('title','Contact')
 @section('content')
 
 <!-- Contact Block -->

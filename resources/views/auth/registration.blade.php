@@ -1,5 +1,5 @@
 @extends('no')
-  
+@section('title','Register')
 @section('content')
 
 <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/logins/login-3/assets/css/login-3.css">

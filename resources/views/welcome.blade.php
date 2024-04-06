@@ -1,5 +1,5 @@
 @extends('index')
-@section('title','HOME')
+@section('title')
 @section('content')
 
 <!-- Intro Three -->
