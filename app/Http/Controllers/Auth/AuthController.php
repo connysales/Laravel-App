@@ -115,6 +115,16 @@ class AuthController extends Controller
         return redirect("login")->withSuccess('Oops! You do not have access');
     }
 
+    public function admin()
+    {
+        if (Auth::check()) {
+            return view('admin');
+        }
+
+        return redirect("login")->withSuccess('Oops! You do not have access');
+    }
+
+
     public function about()
     {
         if (Auth::check()) {
@@ -142,10 +152,29 @@ class AuthController extends Controller
         return redirect("login")->withSuccess('Oops! You do not have access');
     }
 
+    
+    public function customer()
+    {
+        if (Auth::check()) {
+            return view('customer');
+        }
+
+        return redirect("login")->withSuccess('Oops! You do not have access');
+    }
+
     public function services()
     {
         if (Auth::check()) {
             return view('services');
+        }
+
+        return redirect("login")->withSuccess('Oops! You do not have access');
+    }
+
+    public function barber()
+    {
+        if (Auth::check()) {
+            return view('barber');
         }
 
         return redirect("login")->withSuccess('Oops! You do not have access');

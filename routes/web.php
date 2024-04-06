@@ -43,6 +43,9 @@ Route::controller(AuthController::class)->group(function(){
     Route::get('price', [AuthController::class, 'price'])->name('price');
     Route::get('services', [AuthController::class, 'services'])->name('services');
     Route::get('testimonial', [AuthController::class, 'testimonial'])->name('testimonial');
+    Route::get('admin', [AuthController::class, 'admin'])->name('admin');
+    Route::get('barber', [AuthController::class, 'barber'])->name('barber');
+    Route::get('customer', [AuthController::class, 'customer'])->name('customer');
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 });
 
