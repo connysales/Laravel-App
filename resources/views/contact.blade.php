@@ -5,7 +5,7 @@
 @section('content')
 
 <!-- Contact Block -->
-<section id="contact" class="contact-section h-97vh bg-dark">
+<section id="contact" class="contact-section bg-dark">
 	<div id="map" class="bg-overlay"></div>
 	<div class="container py-5">
 		<div class="col-lg-8 col-md-6 col-sm-10 form-sec bg-white my-5 p-5 mx-auto">

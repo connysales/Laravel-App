@@ -6,7 +6,7 @@
 
 
 <!-- Testimonial Block 01-->
-<section id="testimonial" class="testimonial-section sec-bg-04 py-5 h-97vh bg-overlay">
+<section id="testimonial" class="testimonial-section sec-bg-04 py-5 bg-overlay">
 	<div class="container">
 		<div class="row">
 			<div class="head-box text-center mb-3 col-md-12 mt-5">
