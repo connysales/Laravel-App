@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/loaders.css"/>
 <!-- Font-Awesome Style CSS File -->
 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
 <body>
 
 <!-- Page loading animation -->
