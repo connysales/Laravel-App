@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Barber Shop Bootstrap Template Grafreez</title>
+	<title>Conny Barber Shop</title>
 </head>
 <!-- bootstrap Style CSS File -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -56,7 +56,7 @@
                         <a class="nav-link" href="{{ route('login') }}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('registration') }}">Register</a>
+                        <a class="nav-link" href="{{ route('register') }}">Register</a>
                     </li>
                 @else
                     @if(auth()->user()->user_type == 'admin')
