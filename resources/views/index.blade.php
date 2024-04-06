@@ -25,7 +25,7 @@
 <!-- Top navigation -->
 <nav class="navbar navbar-expand-md fixed-top top-nav">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/"><strong>Grafreez</strong></a>
+        <a class="navbar-brand" href="/"><strong>ShearSphere</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><img src="img/icons/menu.png"></span>
         </button>

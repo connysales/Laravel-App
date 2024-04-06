@@ -11,7 +11,7 @@
         <div class="col-12 col-md-6 bsb-tpl-bg-platinum">
           <div class="d-flex flex-column justify-content-between h-100 p-3 p-md-4 p-xl-5">
             <h3 class="m-0">Welcome!</h3>
-            <a class="navbar-brand" href="/"><strong>Grafreez</strong></a>
+            <a class="navbar-brand" href="/"><strong>ShearSphere</strong></a>
             <p class="mb-0">Not a member yet? <a href="registration" class="link-secondary text-decoration-none">Register now</a></p>
           </div>
         </div>
