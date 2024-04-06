@@ -90,7 +90,7 @@
 <!-- Footer Block -->
 <div class="copy-footer bg-primary py-2">
     <div class="container text-center text-light">
-        &copy; <a href="http://grafreez.com" target="_blank">Grafreez.com</a> <span id="year"></span>. All rights reserved. Created with <i class="fa fa-heart"></i>
+        &copy; <a target="_blank">ShearSphere</a> <span id="year"></span>. All rights reserved. Created with <i class="fa fa-heart"></i>
     </div>
 </div>
 
